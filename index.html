@@ -1,22 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+    <html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+        <!-- ===== CSS ===== -->
         <link rel="stylesheet" href="assets/css/styles.css">
-
-        <!-- =====BOX ICONS===== -->
-        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
         <link rel="shortout icon" type="image/x-icon" href="favicon.ico">
-        <title>Abshir noor</title>
+        <!-- ===== BOX ICONS ===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+        <title>Abshir Noor Web designer and developer</title>
     </head>
     <body>
         <!--===== HEADER =====-->
         <header class="l-header">
             <nav class="nav bd-grid">
                 <div>
-                    <a class="nav__logo"  >Abshir noor</a>
+                    <a href="#" class="nav__logo">Abshirnoor</a>
                 </div>
 
                 <div class="nav__menu" id="nav-menu">
@@ -24,10 +25,8 @@
                         <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
                         <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
                         <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-                        <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
+                        <li class="nav__item"><a href="#portfolio" class="nav__link">Portfolio</a></li>
                         <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
-                        <li class="nav__item"><a href="#support" class="nav__link">Support</a></li>
-
                     </ul>
                 </div>
 
@@ -39,37 +38,38 @@
 
         <main class="l-main">
             <!--===== HOME =====-->
-            <section class="home bd-grid" id="home">
-                <div class="home__data">
-                    <h1 class="home__title">Hi,<br>I'am <span class="home__title-color">Abshir Noor</span><br>a Web and Designer</h1>
+            <section class="home" id="home">
+                <div class="home__container bd-grid">
+                    <h1 class="home__title"><span>HE</span><br>LLO.</h1>
 
-                    <a href="#contact" class="button">Contact</a>
-                </div>
+                    <div class="home__scroll">
+                        <a href="#about" class="home__scroll-link"><i class='bx bx-up-arrow-alt' ></i>Scroll down</a>
+                    </div>
 
-                <div class="home__social">
-                    <a href="https://www.linkedin.com/in/abshir-noor" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
-                    <a href="https://twitter.com/aintepoi1" class="home__social-icon"><i class='bx bxl-twitter' ></i></a>
-                    <a href="https://www.instagram.com/aintepoi/" class="home__social-icon"><i class='bx bxl-instagram' ></i></a>
-                </div>
-
-                <div class="home__img">    
-                    <img src="assets/img/perfil.jpg" alt="">
+                    <img src="assets/img/perfil.png" alt="" class="home__img">
                 </div>
             </section>
-
+            
             <!--===== ABOUT =====-->
-            <section class="about section " id="about">
+            <section class="about section" id="about">
                 <h2 class="section-title">About</h2>
 
                 <div class="about__container bd-grid">
                     <div class="about__img">
-                        <img src="assets/img/about.jpg" alt="">
+                        <img src="assets/img/perfil.png" alt="">
                     </div>
-                    
+
                     <div>
                         <h2 class="about__subtitle">I'am Abshir</h2>
-                        <p class="about__text">I'm a web designer with a passion for front end development and design. I'm currently a third year student at University of Somalia pursuing a degree in Computer science with a minor in interaction design. I aspire toward a career that will allow me to channel my creativity through crafting beautiful software and engaging experiences.</p>           
-                    </div>                                   
+                        <span class="about__profession">Web designer and developer</span>
+                        <p class="about__text">I'm a web designer with a passion for front end development and also back end development. I'm currently a third year student at University of Somalia pursuing a degree in Computer science with a minor in interaction design. I aspire toward a career that will allow me to channel my creativity through crafting beautiful software and engaging experiences.</p>
+
+                        <div class="about__social">
+                            <a href="https://www.linkedin.com/in/abshir-noor" class="about__social-icon"><i class='bx bxl-linkedin' ></i></a>
+                            <a href="https://github.com/Abshirnoor" class="about__social-icon"><i class='bx bxl-github' ></i></a>
+                            <a href="https://twitter.com/ceeyntetech" class="about__social-icon"><i class='bx bxl-twitter'></i></i></a>
+                        </div>
+                    </div>
                 </div>
             </section>
 
@@ -77,88 +77,74 @@
             <section class="skills section" id="skills">
                 <h2 class="section-title">Skills</h2>
 
-                <div class="skills__container bd-grid">          
-                    <div>
-                        <h2 class="skills__subtitle">Profesional Skills</h2>
-                        <p class="skills__text">I've been doing web design for about 3 years now, and I'm always eager to learn more in this fast paced industry.</p>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-html5 skills__icon'></i>
-                                <span class="skills__name">HTML5</span>
-                            </div>
-                            <div class="skills__bar skills__html">
-
-                            </div>
-                            <div>
-                                <span class="skills__percentage">95%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-css3 skills__icon'></i>
-                                <span class="skills__name">CSS3</span>
-                            </div>
-                            <div class="skills__bar skills__css">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">85%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-javascript skills__icon' ></i>
-                                <span class="skills__name">JAVASCRIPT</span>
-                            </div>
-                            <div class="skills__bar skills__js">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">65%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxs-paint skills__icon'></i>
-                                <span class="skills__name">UX/UI</span>
-                            </div>
-                            <div class="skills__bar skills__ux">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">85%</span>
-                            </div>
-                        </div>
+                <div class="skills__container bd-grid">
+                    <div class="skills__box">
+                        <h3 class="skills__subtitle">Development</h3>
+                        <span class="skills__name">Html</span>
+                        <span class="skills__name">Css</span>
+                        <span class="skills__name">Javascript</span>
+                        <span class="skills__name">Scss</span>
+                        <span class="skills__name">React</span>
+                        <span class="skills__name">Wordpress</span>
+                        
+                        <h3 class="skills__subtitle">Design</h3>
+                        <span class="skills__name">Branding</span>
+                        <span class="skills__name">Adobe XD</span>
+                        <span class="skills__name">Photoshop</span>
                     </div>
-                    
-                    <div>              
-                        <img src="assets/img/work3.jpg" alt="" class="skills__img">
+
+                    <div class="skills__img">
+                        <img src="assets/img/skill.jpg" alt="">
                     </div>
                 </div>
             </section>
 
-            <!--===== WORK =====-->
-            <section class="work section" id="work">
-                <h2 class="section-title">Work</h2>
+            <!--===== PORTFOLIO =====-->
+            <section class="portfolio section" id="portfolio">
+                <h2 class="section-title">Portfolio</h2>
 
-                <div class="work__container bd-grid">
-                    <div class="work__img">
-                        <img src="assets/img/img_1.png" alt="">
+                <div class="portfolio__container bd-grid">
+                    <div class="portfolio__img">
+                        <img src="assets/img/work1.jpeg" alt="">
+
+                        <div class="portfolio__link">
+                            <a href="#" class="portfolio__link-name">View details</a>
+                        </div>
                     </div>
-                    <div class="work__img">
-                        <img src="assets/img/img_2.png" alt="">
+                    <div class="portfolio__img">
+                        <img src="assets/img/work2.png" alt="">
+
+                        <div class="portfolio__link">
+                            <a href="#" class="portfolio__link-name">View details</a>
+                        </div>
                     </div>
-                    <div class="work__img">
-                        <img src="assets/img/img_3.png" alt="">
+                    <div class="portfolio__img">
+                        <img src="assets/img/work3.jpg" alt="">
+
+                        <div class="portfolio__link">
+                            <a href="#" class="portfolio__link-name">View details</a>
+                        </div>
                     </div>
-                    <div class="work__img">
-                        <img src="assets/img/img_4.png" alt="">
+                    <div class="portfolio__img">
+                        <img src="assets/img/work4.jpg" alt="">
+
+                        <div class="portfolio__link">
+                            <a href="#" class="portfolio__link-name">View details</a>
+                        </div>
                     </div>
-                    <div class="work__img">
-                        <img src="assets/img/img_5.jpeg" alt="">
+                    <div class="portfolio__img">
+                        <img src="assets/img/work5.png" alt="">
+
+                        <div class="portfolio__link">
+                            <a href="#" class="portfolio__link-name">View details</a>
+                        </div>
                     </div>
-                    <div class="work__img">
-                        <img src="assets/img/img_6.jpeg" alt="index.html">
+                    <div class="portfolio__img">
+                        <img src="assets/img/work6.jpg" alt="">
+
+                        <div class="portfolio__link">
+                            <a href="#" class="portfolio__link-name">View details</a>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -168,160 +154,65 @@
                 <h2 class="section-title">Contact</h2>
 
                 <div class="contact__container bd-grid">
-                    <form action="" class="contact__form" action="contactform.php">
-                        <input type="text" placeholder="Name" class="contact__input">
-                        <input type="mail" placeholder="Email" class="contact__input">
+                    <div class="contact__info">
+                        <h3 class="contact__subtitle">EMAIL</h3>
+                        <span class="contact__text">abshirceynte9@gmail.com</span>
+
+                        <h3 class="contact__subtitle">PHONE</h3>
+                        <span class="contact__text">+252612469996</span>
+
+                        <h3 class="contact__subtitle">Whatssapp</h3>
+                        <span class="contact__text">+14159960129</span>
+                    </div>
+
+                    <form action="" class="contact__form">
+                        <div class="contact__inputs">
+                            <input type="text" placeholder="Name" class="contact__input">
+                            <input type="mail" placeholder="Email" class="contact__input">
+                        </div>
+
                         <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
-                        <input type="button" value="Send" class="contact__button button">
+
+                        <input type="submit" value="Enviar" class="contact__button">
                     </form>
                 </div>
-                
             </section>
-             <!--===== Support =====-->
-             <section class="support section" id="support">
-                <h2 class="section-title">Support Me</h2>
-                <div id="smart-button-container">
-                    <div style="text-align: center"><label for="description"> </label><input type="text" name="descriptionInput" id="description" maxlength="127" value=""></div>
-                      <p id="descriptionError" style="visibility: hidden; color:red; text-align: center;">Please enter a description</p>
-                    <div style="text-align: center"><label for="amount"> </label><input name="amountInput" type="number" id="amount" value="" ><span> USD</span></div>
-                      <p id="priceLabelError" style="visibility: hidden; color:red; text-align: center;">Please enter a price</p>
-                    <div id="invoiceidDiv" style="text-align: center; display: none;"><label for="invoiceid"> </label><input name="invoiceid" maxlength="127" type="text" id="invoiceid" value="" ></div>
-                      <p id="invoiceidError" style="visibility: hidden; color:red; text-align: center;">Please enter an Invoice ID</p>
-                    <div style="text-align: center; margin-top: 0.625rem;" id="paypal-button-container"></div>
-                  </div>
-                  <script src="https://www.paypal.com/sdk/js?client-id=sb&currency=USD" data-sdk-integration-source="button-factory"></script>
-                  <script>
-                  function initPayPalButton() {
-                    var description = document.querySelector('#smart-button-container #description');
-                    var amount = document.querySelector('#smart-button-container #amount');
-                    var descriptionError = document.querySelector('#smart-button-container #descriptionError');
-                    var priceError = document.querySelector('#smart-button-container #priceLabelError');
-                    var invoiceid = document.querySelector('#smart-button-container #invoiceid');
-                    var invoiceidError = document.querySelector('#smart-button-container #invoiceidError');
-                    var invoiceidDiv = document.querySelector('#smart-button-container #invoiceidDiv');
-                
-                    var elArr = [description, amount];
-                
-                    if (invoiceidDiv.firstChild.innerHTML.length > 1) {
-                      invoiceidDiv.style.display = "block";
-                    }
-                
-                    var purchase_units = [];
-                    purchase_units[0] = {};
-                    purchase_units[0].amount = {};
-                
-                    function validate(event) {
-                      return event.value.length > 0;
-                    }
-                
-                    paypal.Buttons({
-                      style: {
-                        color: 'gold',
-                        shape: 'rect',
-                        label: 'pay',
-                        layout: 'vertical',
-                        
-                      },
-                
-                      onInit: function (data, actions) {
-                        actions.disable();
-                
-                        if(invoiceidDiv.style.display === "block") {
-                          elArr.push(invoiceid);
-                        }
-                
-                        elArr.forEach(function (item) {
-                          item.addEventListener('keyup', function (event) {
-                            var result = elArr.every(validate);
-                            if (result) {
-                              actions.enable();
-                            } else {
-                              actions.disable();
-                            }
-                          });
-                        });
-                      },
-                
-                      onClick: function () {
-                        if (description.value.length < 1) {
-                          descriptionError.style.visibility = "visible";
-                        } else {
-                          descriptionError.style.visibility = "hidden";
-                        }
-                
-                        if (amount.value.length < 1) {
-                          priceError.style.visibility = "visible";
-                        } else {
-                          priceError.style.visibility = "hidden";
-                        }
-                
-                        if (invoiceid.value.length < 1 && invoiceidDiv.style.display === "block") {
-                          invoiceidError.style.visibility = "visible";
-                        } else {
-                          invoiceidError.style.visibility = "hidden";
-                        }
-                
-                        purchase_units[0].description = description.value;
-                        purchase_units[0].amount.value = amount.value;
-                
-                        if(invoiceid.value !== '') {
-                          purchase_units[0].invoice_id = invoiceid.value;
-                        }
-                      },
-                
-                      createOrder: function (data, actions) {
-                        return actions.order.create({
-                          purchase_units: purchase_units,
-                        });
-                      },
-                
-                      onApprove: function (data, actions) {
-                        return actions.order.capture().then(function (details) {
-                          alert('Transaction completed by ' + details.payer.name.given_name + '!');
-                        });
-                      },
-                
-                      onError: function (err) {
-                        console.log(err);
-                      }
-                    }).render('#paypal-button-container');
-                  }
-                  initPayPalButton();
-                  </script>
-                </section>
         </main>
 
         <!--===== FOOTER =====-->
-        <footer class="footer">
-            <p class="footer__title">Abshir Noor</p>
-            <div class="footer__social">
-                <a href="https://www.facebook.com/abshirnoor11" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
-                <a href="https://www.instagram.com/aintepoi/" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
-                <a href="http://twitter.com/aintepoi1" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
-            </div>
-            <p>&#169; 2020 copyright all right reserved</p>
-        </footer>
+        <footer class="footer section">
+            <div class="footer__container bd-grid">
+                <div class="footer__data">
+                    <h2 class="footer__title">Abshir noor</h2>
+                    <p class="footer__text">I'm Abshir Noor and this is my personal website</p>
+                </div>
 
+                <div class="footer__data">
+                    <h2 class="footer__title">EXPLORE</h2>
+                    <ul>
+                        <li><a href="#home" class="footer__link">Home</a></li>
+                        <li><a href="#about" class="footer__link">About</a></li>
+                        <li><a href="#skills" class="footer__link">Skills</a></li>
+                        <li><a href="#portfolio" class="footer__link">Portfolio</a></li>
+                        <li><a href="#Contact" class="footer__link">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer__data">
+                    <h2 class="footer__title">FOLLOW</h2>
+                    <a href="https://www.facebook.com/abshirnoor11" class="footer__social"><i class='bx bxl-facebook' ></i></a>
+                    <a href="https://www.instagram.com/aintepoi/" class="footer__social"><i class='bx bxl-instagram' ></i></a>
+                    <a href="#=https://twitter.com/ceeyntetech" class="footer__social"><i class='bx bxl-twitter' ></i></a>
+                </div>
+
+
+            </div>
+        </footer>
 
         <!--===== SCROLL REVEAL =====-->
         <script src="https://unpkg.com/scrollreveal"></script>
 
         <!--===== MAIN JS =====-->
         <script src="assets/js/main.js"></script>
-<!-- Start of LiveChat (www.livechatinc.com) code -->
-<script type="text/javascript">
-  window.__lc = window.__lc || {};
-  window.__lc.license = 12289071;
-  (function() {
-    var lc = document.createElement('script'); lc.type = 'text/javascript'; lc.async = true;
-    lc.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.livechatinc.com/tracking.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(lc, s);
-  })();
-</script>
-<noscript>
-<a href="https://www.livechatinc.com/chat-with/12289071/" rel="nofollow">Chat with us</a>,
-powered by <a href="https://www.livechatinc.com/?welcome" rel="noopener nofollow" target="_blank">LiveChat</a>
-</noscript>
-<!-- End of LiveChat code -->
     </body>
 </html>
