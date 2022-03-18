@@ -1,221 +1,186 @@
 <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Abshir Noor Web developer </title>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Noto+Sans&display=block" rel="stylesheet"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel="shortout icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="./style.css">
 
-        <!-- ===== CSS ===== -->
-        <link rel="stylesheet" href="assets/css/styles.css">
-        <link rel="shortout icon" type="image/x-icon" href="favicon.ico">
-        <!-- ===== BOX ICONS ===== -->
-        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
-
-        <title>Abshir Noor Web designer and developer</title>
-    </head>
-    <body>
-        <!--===== HEADER =====-->
-        <header class="l-header">
-            <nav class="nav bd-grid">
-                <div>
-                    <a href="#" class="nav__logo">Abshirnoor</a>
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="stage">
+    <header class="header">
+        <div class="logo">Abshirnoor</div>
+        <a href="#" class="nav-btn">
+            <svg class="nav-btn__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56 30">
+                <rect class="nav-rect" width="40" height="2" x="8" y="8" fill="#242423"/>
+                <rect class="nav-rect" width="40" height="2" x="8" y="14" fill="#242423"/>
+                <rect width="40" height="2" x="8" y="20" fill="#242423"/>
+            </svg>
+        </a>
+    </header>
+    
+    <section class="intro slide--0" id="slide-0">
+        <div class="intro__content">
+            <h1 class="intro__title">Hi!</h1>
+            <p class="intro__txt">I am very experienced in website building and Graphic design. I am an ambitious, patient, dedicated, determined, and passionate hard-worker who is always seeking to learn new things and improve myself. I am also an efficient worker under pressure.</p>
+        </div>
+        <img class="intro__img intro__img--1" src="images/pic1.jpeg" />
+        
+    </section>
+    
+    
+    <section class="slide slide--1" id="slide-1">
+        <div class="col col--1">
+            <div class="col__content col__content--1">
+                <h2 class="col__content-title"><span class="line__inner">iRise</span><br /><span class="line__inner">Hub</span></h2>
+                <div class="col__content-wrap">
+                    <p class="col__content-txt">Ui/UX Web Development</p>
+                    <a href="https://irisehub.so/" class="slide-link">
+                        <div class="slide-link__circ"></div>
+                        <div class="slide-link__line"></div>
+                    </a>
                 </div>
-
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list">
-                        <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
-                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-                        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-                        <li class="nav__item"><a href="#portfolio" class="nav__link">Portfolio</a></li>
-                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
-                       
-                    </ul>
-                </div>
-
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class='bx bx-menu'></i>
-                </div>
-            </nav>
-        </header>
-
-        <main class="l-main">
-            <!--===== HOME =====-->
-            <section class="home" id="home">
-                <div class="home__container bd-grid">
-                    <h1 class="home__title"><span>HE</span><br>LLO.</h1>
-
-                    <div class="home__scroll">
-                        <a href="#about" class="home__scroll-link"><i class='bx bx-up-arrow-alt' ></i>Scroll down</a>
-                    </div>
-
-                    <img src="assets/img/perfil.png" alt="" class="home__img">
-                </div>
-            </section>
-            
-            <!--===== ABOUT =====-->
-            <section class="about section" id="about">
-                <h2 class="section-title">About</h2>
-
-                <div class="about__container bd-grid">
-                    <div class="about__img">
-                        <img src="assets/img/perfil.png" alt="">
-                    </div>
-
-                    <div>
-                        <h2 class="about__subtitle">I'am Abshir</h2>
-                        <span class="about__profession">Web and Graphic designer</span>
-                        <p class="about__text">I'm a web designer with a passion for front end development and also back end development. I'm currently a third year student at University of Somalia pursuing a degree in Computer science with a minor in interaction design. I aspire toward a career that will allow me to channel my creativity through crafting beautiful software and engaging experiences.</p>
-
-                        <div class="about__social">
-                            <a href="https://www.linkedin.com/in/abshir-noor" class="about__social-icon"><i class='bx bxl-linkedin' ></i></a>
-                            <a href="https://github.com/Abshirnoor" class="about__social-icon"><i class='bx bxl-github' ></i></a>
-                            <a href="https://twitter.com/ceeyntetech" class="about__social-icon"><i class='bx bxl-twitter'></i></i></a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!--===== SKILLS =====-->
-            <section class="skills section" id="skills">
-                <h2 class="section-title">Skills</h2>
-
-                <div class="skills__container bd-grid">
-                    <div class="skills__box">
-                        <h3 class="skills__subtitle">Development</h3>
-                        <span class="skills__name">Html</span>
-                        <span class="skills__name">Css</span>
-                        <span class="skills__name">Javascript</span>
-                        <span class="skills__name">Scss</span>
-                        <span class="skills__name">React</span>
-                        <span class="skills__name">Wordpress</span>
-                        
-                        <h3 class="skills__subtitle">Design</h3>
-                        <span class="skills__name">Branding</span>
-                        <span class="skills__name">Adobe XD</span>
-                        <span class="skills__name">Photoshop</span>
-                    </div>
-
-                    <div class="skills__img">
-                        <img src="assets/img/skill.jpg" alt="">
-                    </div>
-                </div>
-            </section>
-
-            <!--===== PORTFOLIO =====-->
-            <section class="portfolio section" id="portfolio">
-                <h2 class="section-title">Portfolio</h2>
-
-                <div class="portfolio__container bd-grid">
-                    <div class="portfolio__img">
-                        <img src="assets/img/work1.jpeg" alt="">
-
-                        <div class="portfolio__link">
-                            <a href="#" class="portfolio__link-name">View details</a>
-                        </div>
-                    </div>
-                    <div class="portfolio__img">
-                        <img src="assets/img/work2.png" alt="">
-
-                        <div class="portfolio__link">
-                            <a href="#" class="portfolio__link-name">View details</a>
-                        </div>
-                    </div>
-                    <div class="portfolio__img">
-                        <img src="assets/img/work3.jpg" alt="">
-
-                        <div class="portfolio__link">
-                            <a href="#" class="portfolio__link-name">View details</a>
-                        </div>
-                    </div>
-                    <div class="portfolio__img">
-                        <img src="assets/img/work4.jpg" alt="">
-
-                        <div class="portfolio__link">
-                            <a href="#" class="portfolio__link-name">View details</a>
-                        </div>
-                    </div>
-                    <div class="portfolio__img">
-                        <img src="assets/img/work6.jpg" alt="">
-
-                        <div class="portfolio__link">
-                            <a href="#" class="portfolio__link-name">View details</a>
-                        </div>
-                    </div>
-                   <div class="portfolio__img">
-                        <img src="assets/img/work.jpg" alt="">
-
-                        <div class="portfolio__link">
-                            <a href="#" class="portfolio__link-name">View details</a>
-                        </div>
-                    </div>
-                 
-                </div>
-                   
-            </section>
-
-            <!--===== CONTACT =====-->
-            <section class="contact section" id="contact">
-                <h2 class="section-title">Contact</h2>
-
-                <div class="contact__container bd-grid">
-                    <div class="contact__info">
-                        <h3 class="contact__subtitle">EMAIL</h3>
-                        <span class="contact__text">abshirceynte9@gmail.com</span>
-
-                        <h3 class="contact__subtitle">PHONE</h3>
-                        <span class="contact__text">+252612469996</span>
-
-                        <h3 class="contact__subtitle">Whatssapp</h3>
-                        <span class="contact__text">+14159960129</span>
-                    </div>
-
-                    <form action="" class="contact__form">
-                        <div class="contact__inputs">
-                            <input type="text" placeholder="Name" class="contact__input">
-                            <input type="mail" placeholder="Email" class="contact__input">
-                        </div>
-
-                        <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
-
-                        <input type="submit" value="Submit" class="contact__button">
-                    </form>
-                </div>
-            </section>
-        </main>
-
-        <!--===== FOOTER =====-->
-        <footer class="footer section">
-            <div class="footer__container bd-grid">
-                <div class="footer__data">
-                    <h2 class="footer__title">Abshir noor</h2>
-                    <p class="footer__text">I'm Abshir Noor and this is my personal website</p>
-                </div>
-
-                <div class="footer__data">
-                    <h2 class="footer__title">EXPLORE</h2>
-                    <ul>
-                        <li><a href="#home" class="footer__link">Home</a></li>
-                        <li><a href="#about" class="footer__link">About</a></li>
-                        <li><a href="#skills" class="footer__link">Skills</a></li>
-                        <li><a href="#portfolio" class="footer__link">Portfolio</a></li>
-                        <li><a href="#Contact" class="footer__link">Contact</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer__data">
-                    <h2 class="footer__title">FOLLOW</h2>
-                    <a href="https://www.facebook.com/abshirnoor11" class="footer__social"><i class='bx bxl-facebook' ></i></a>
-                    <a href="https://www.instagram.com/aintepoi/" class="footer__social"><i class='bx bxl-instagram' ></i></a>
-                    <a href="#=https://twitter.com/ceeyntetech" class="footer__social"><i class='bx bxl-twitter' ></i></a>
-                </div>
-
-
             </div>
-        </footer>
+            <a href="https://irisehub.so/" class="slide__scroll-link">
+                <div class="slide__scroll-line"></div>
+            </a>
+        </div>
+        <div class="col col--2">
+            <div class="col__image-wrap">
+                <img class="img img--1" src="images/work1.jpg" />
+            </div>
+        </div>
+    </section>   
+    
+    <section class="slide slide--2" id="slide-2">
+        <div class="col col--1">
+            <div class="col__content col__content--2">
+                <h2 class="col__content-title"><span class="line__inner">Minbar</span><br /><span class="line__inner">Space</span></h2>
+                <div class="col__content-wrap">
+                    <p class="col__content-txt">Ui/UX Web Development</p>
+                    <a href="https://www.minbar.so/" class="slide-link">
+                        <div class="slide-link__circ"></div>
+                        <div class="slide-link__line"></div>
+                    </a>
+                </div>
+            </div>
+            <a href="https://www.minbar.so/" class="slide__scroll-link">
+                <div class="slide__scroll-line"></div>
+            </a>
+        </div>
+        <div class="col col--2">
+            <div class="col__image-wrap">
+                <img class="img img--1" src="images/work2.jpg" />
+            </div>
+        </div>
+    </section>   
+    
+    <section class="slide slide--3" id="slide-3">
+        <div class="col col--1">
+            <div class="col__content col__content--3">
+                <h2 class="col__content-title"><span class="line__inner">#MTS</span><br /><span class="line__inner">2021</span></h2>
+                <div class="col__content-wrap">
+                    <p class="col__content-txt">Ui/UX Web Development</p>
+                    <a href="https://mts2021.tech/" class="slide-link">
+                        <div class="slide-link__circ"></div>
+                        <div class="slide-link__line"></div>
+                    </a>
+                </div>
+            </div>
+            <a href="https://mts2021.tech/" class="slide__scroll-link">
+                <div class="slide__scroll-line"></div>
+            </a>
+        </div>
+        <div class="col col--2">
+            <div class="col__image-wrap">
+                <img class="img img--1" src="images/work3.jpg" />
+            </div>
+        </div>
+    </section>   
+    
+    <section class="slide slide--4" id="slide-4">
+        <div class="col col--1">
+            <div class="col__content col__content--4">
+                <h2 class="col__content-title"><span class="line__inner">Dalbile</span><br /><span class="line__inner">Youth</span></h2>
+                <div class="col__content-wrap">
+                    <p class="col__content-txt">Ui/UX Web Development</p>
+                    <a href="https://dalbilehub.so/" class="slide-link">
+                        <div class="slide-link__circ"></div>
+                        <div class="slide-link__line"></div>
+                    </a>
+                </div>
+            </div>
+            <a href="https://dalbilehub.so/" class="slide__scroll-link">
+                <div class="slide__scroll-line"></div>
+            </a>
+        </div>
+        <div class="col col--2">
+            <div class="col__image-wrap">
+                <img class="img img--1" src="images/work4.jpg" />
+            </div>
+        </div>
+    </section>
+    
+    <section class="slide slide--5" id="slide-5">
+        <div class="col col--1">
+            <div class="col__content col__content--5">
+                <h2 class="col__content-title"><span class="line__inner">My</span><br /><span class="line__inner">Art</span></h2>
+                <div class="col__content-wrap">
+                    <p class="col__content-txt">I enjoy drawing; it is my passion. I can draw very well and create eye-catching designs. I usually draw in my phone with a brush or my hand, and I'm still learning new things.</p>
+                    <a href="https://www.instagram.com/abshirn00r" class="slide-link">
+                        <div class="slide-link__circ"></div>
+                        <div class="slide-link__line"></div>
+                    </a>
+                </div>
+            </div>
+            <a href="https://www.instagram.com/abshirn00r" class="slide__scroll-link">
+                <div class="slide__scroll-line"></div>
+            </a>
+        </div>
+        <div class="col col--2">
+            <div class="col__image-wrap">
+                <img class="img img--1" src="images/work5.jpg" />
+            </div>
+        </div>
+    </section>   
+    
+    <section class="slide slide--6" id="slide-6">
+        <div class="col col--1">
+            <div class="col__content col__content--6">
+                <h2 class="col__content-title"><span class="line__inner">Copy</span><br /><span class="line__inner">Merch</span></h2>
+                <div class="col__content-wrap">
+                    <p class="col__content-txt">Apparel Design</p>
+                    <a href="https://abshirnoor.creator-spring.com/" class="slide-link">
+                        <div class="slide-link__circ"></div>
+                        <div class="slide-link__line"></div>
+                    </a>
+                </div>
+            </div>
+            <a href="https://abshirnoor.creator-spring.com/" class="slide__scroll-link">
+                <div class="slide__scroll-line"></div>
+            </a>
+        </div>
+        <div class="col col--2">
+            <div class="col__image-wrap">
+                <img class="img img--1" src="images/work6.jpg" />
+            </div>
+        </div>
+    </section>   
+    
+    <footer class="footer" id="slide-7">
+        <a class="footer__link" href="https://abshirnoor.github.io/" target="_blank">Abshir Noor</a>
+        <a class="footer__link-top" href="#slide-0">Top<span class="footer__link-top-line"></span></a>
+        <p class="footer__copyright">© 2022 Abshirnoor</p>
+    </footer>
+</div>
+<!-- partial -->
+  <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js'></script>
+<script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/ScrollToPlugin3.min.js'></script>
+<script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/SplitText3.min.js'></script>
+<script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/ScrollTrigger.min.js'></script><script  src="./script.js"></script>
 
-        <!--===== SCROLL REVEAL =====-->
-        <script src="https://unpkg.com/scrollreveal"></script>
-
-        <!--===== MAIN JS =====-->
-        <script src="assets/js/main.js"></script>
-    </body>
+</body>
 </html>
