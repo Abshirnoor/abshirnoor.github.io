@@ -1,0 +1,253 @@
+/* Repositories Page Styles - Clean & Minimalist */
+.repositories-content {
+    margin-left: var(--menu-width);
+    padding: 60px 40px 40px 40px;
+    min-height: 100vh;
+    background: #fff;
+    color: #333;
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    overflow-y: auto;
+}
+
+.repositories-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Profile Section */
+.profile-section {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 50px;
+    padding: 30px;
+    background: #f8f9fa;
+    border-radius: 8px;
+}
+
+.profile-image {
+    flex-shrink: 0;
+}
+
+.github-avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+.profile-info h1 {
+    font-size: 24px;
+    font-weight: 500;
+    color: #333;
+    margin: 0 0 8px 0;
+}
+
+.profile-info h2 {
+    font-size: 16px;
+    font-weight: 400;
+    color: #666;
+    margin: 0 0 16px 0;
+}
+
+.profile-info .bio {
+    font-size: 14px;
+    color: #333;
+    margin: 0 0 12px 0;
+    font-weight: 500;
+}
+
+.stats {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.stats span {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+    color: #666;
+    font-weight: 500;
+}
+
+.stats i {
+    color: #666;
+}
+
+/* Repositories Grid */
+.repositories-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 25px;
+    margin-bottom: 40px;
+    flex: 1;
+}
+
+.repo-card {
+    background: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 25px;
+    transition: all 0.3s ease;
+}
+
+.repo-card:hover {
+    border-color: rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+}
+
+.repo-card h3 {
+    font-size: 18px;
+    font-weight: 500;
+    color: #000;
+    margin: 0 0 12px 0;
+}
+
+.repo-description {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #666;
+    margin: 0 0 20px 0;
+}
+
+.repo-meta {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.language {
+    padding: 6px 12px;
+    background: #f8f9fa;
+    border: 1px solid #e9ecef;
+    border-radius: 15px;
+    font-size: 12px;
+    color: #666;
+    font-weight: 500;
+}
+
+.repo-link {
+    display: inline-block;
+    color: #333;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 10px 20px;
+    background: #f8f9fa;
+    border: 1px solid #e9ecef;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.repo-link:hover {
+    background: #e9ecef;
+    border-color: #dee2e6;
+    color: #000;
+}
+
+/* View All Section */
+.view-all-section {
+    text-align: center;
+    padding: 20px 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.view-all-btn {
+    display: inline-block;
+    color: #333;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 12px 24px;
+    background: #f8f9fa;
+    border: 1px solid #e9ecef;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.view-all-btn:hover {
+    background: #e9ecef;
+    border-color: #dee2e6;
+    color: #000;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .repositories-content {
+        padding: 50px 30px 30px 30px;
+    }
+    
+    .repositories-grid {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+    }
+    
+    .profile-section {
+        padding: 25px;
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .repositories-content {
+        margin-left: 0;
+        padding: 80px 20px 20px 20px;
+    }
+    
+    .profile-section {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+        margin-bottom: 30px;
+    }
+    
+    .github-avatar {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .repositories-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
+    .repo-card {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .repositories-content {
+        padding: 70px 15px 15px 15px;
+    }
+    
+    .profile-section {
+        padding: 15px;
+        margin-bottom: 25px;
+    }
+    
+    .profile-info h1 {
+        font-size: 20px;
+    }
+    
+    .profile-info h2 {
+        font-size: 14px;
+    }
+    
+    .repo-card {
+        padding: 15px;
+    }
+    
+    .repo-card h3 {
+        font-size: 16px;
+    }
+    
+    .repo-description {
+        font-size: 13px;
+    }
+}

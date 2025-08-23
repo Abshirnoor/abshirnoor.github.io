@@ -1,0 +1,581 @@
+/* Base Variables */
+:root {
+    --menu-width: 200px;
+    --text-color: #333;
+    --menu-bg: rgba(231, 231, 231, 0.9);
+    --transition-speed: 0.3s;
+    --content-width: 1280px;
+    --project-bg: #E7E7E7;
+}
+
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    min-height: 100%;
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    color: var(--text-color);
+    overflow-x: hidden;
+    font-size: 14px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Side Menu */
+.main-menu {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: var(--menu-width);
+    height: 100%;
+    background: var(--menu-bg);
+    padding: 40px 20px;
+    overflow-y: auto;
+    z-index: 1000;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.menu-header {
+    margin-bottom: 40px;
+}
+
+.menu-header a {
+    display: block;
+    transition: opacity var(--transition-speed);
+}
+
+.menu-header h1 {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 4px;
+}
+
+.menu-header h2 {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.menu-items {
+    list-style: none;
+    margin-bottom: 40px;
+}
+
+.menu-items li {
+    margin-bottom: 10px;
+}
+
+.menu-items a {
+    font-size: 14px;
+    color: var(--text-color);
+    transition: opacity var(--transition-speed);
+    opacity: 0.8;
+}
+
+.menu-items a:hover,
+.menu-items a.active {
+    opacity: 1;
+}
+
+/* Projects Container - Moved to projects.css */
+
+/* Social Links */
+.social-links {
+    list-style: none;
+    margin-top: auto;
+    padding-top: 20px;
+    border-top: 1px solid rgba(0,0,0,0.1);
+}
+
+.social-links li {
+    margin-bottom: 10px;
+}
+
+.social-links a {
+    font-size: 13px;
+    color: var(--text-color);
+    opacity: 0.6;
+    transition: opacity var(--transition-speed);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.social-links a:hover {
+    opacity: 1;
+}
+
+/* Page Header (appears on all pages except home) */
+.page-header {
+    position: fixed;
+    top: 0;
+    left: var(--menu-width);
+    right: 0;
+    height: 60px;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    z-index: 999;
+    font-family: 'Inter', sans-serif;
+}
+
+.page-header .header-left .header-name {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+.page-header .header-right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.page-header .header-icon {
+    font-size: 16px;
+    color: var(--text-color);
+    opacity: 0.7;
+}
+
+.page-header .header-title {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--text-color);
+}
+
+/* Mobile Navigation */
+.mobile-nav {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    background: rgba(231, 231, 231, 0.95);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    z-index: 1001;
+    padding: 0 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Full Screen Mobile Menu */
+.mobile-menu-fullscreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: var(--menu-bg);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    z-index: 1002;
+    display: none;
+    flex-direction: column;
+    padding: 80px 30px 20px;
+    overflow-y: auto;
+}
+
+.mobile-menu-fullscreen.active {
+    display: flex;
+}
+
+.mobile-menu-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: var(--text-color);
+    padding: 10px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mobile-menu-close::before {
+    content: '×';
+    font-size: 32px;
+    line-height: 1;
+}
+
+.mobile-menu-header {
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.mobile-menu-header h1 {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0 0 5px 0;
+    color: var(--text-color);
+}
+
+.mobile-menu-header h2 {
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0;
+    color: var(--text-color);
+    opacity: 0.8;
+}
+
+.mobile-menu-header a {
+    text-decoration: none;
+    color: inherit;
+    transition: opacity 0.3s ease;
+}
+
+.mobile-menu-header a:hover {
+    opacity: 0.8;
+}
+
+.mobile-menu-items {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex: 1;
+}
+
+.mobile-menu-items li {
+    margin-bottom: 5px;
+}
+
+.mobile-menu-items a {
+    display: block;
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--text-color);
+    text-decoration: none;
+    padding: 6px 0;
+    transition: color 0.3s ease;
+}
+
+.mobile-menu-items a:hover {
+    color: #000;
+}
+
+.mobile-menu-social {
+    margin-top: 30px;
+    padding-top: 15px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.mobile-menu-social ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.mobile-menu-social a {
+    color: var(--text-color);
+    font-size: 16px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.mobile-menu-social a:hover {
+    color: #000;
+}
+
+.mobile-nav-brand {
+    display: flex;
+    flex-direction: column;
+}
+
+.mobile-nav-brand h1 {
+    font-size: 14px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.mobile-nav-brand h2 {
+    font-size: 12px;
+    font-weight: 400;
+    margin: 0;
+    opacity: 0.8;
+}
+
+.mobile-menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.mobile-menu-toggle span {
+    width: 8px;
+    height: 8px;
+    background: #333;
+    border-radius: 0;
+    transition: all 0.3s ease;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    :root {
+        --menu-width: 180px;
+    }
+
+    .page-header {
+        left: 0;
+        padding: 0 20px;
+    }
+
+    .project-title {
+        font-size: 20px;
+    }
+
+    .project-description {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 768px) {
+    :root {
+        --menu-width: 0px;
+        --content-width: 100%;
+    }
+
+    /* Hide desktop menu */
+    .main-menu {
+        display: none;
+    }
+
+    /* Show mobile navigation */
+    .mobile-nav {
+        display: flex;
+    }
+
+    .mobile-menu-toggle {
+        display: flex;
+    }
+
+    /* Hide page header on mobile */
+    .page-header {
+        display: none;
+    }
+
+    /* Adjust main content */
+    .cv-content,
+    .services-content,
+    .repositories-content,
+    .teaching-content,
+    .bookshelf-content {
+        margin-left: 0;
+        width: 100%;
+        padding-top: 80px;
+        padding-left: 20px;
+        padding-right: 20px;
+        overflow-y: auto;
+    }
+
+    .bio-content {
+        margin-left: 0;
+        width: 100%;
+        padding: 0;
+        padding-top: 60px;
+        min-height: calc(100vh - 60px);
+        overflow-y: auto;
+    }
+
+    /* Project adjustments - Moved to projects.css */
+
+    /* CV adjustments */
+    .cv-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding: 20px;
+        padding-top: 100px;
+    }
+
+    .cv-left,
+    .cv-right {
+        padding: 0;
+    }
+
+    .full-name {
+        font-size: 60px;
+    }
+
+    .name-section {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    /* Bio adjustments */
+    .bio-section {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding-top: 80px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 40px;
+    }
+
+    .bio-image {
+        max-width: 100%;
+        margin: 0 auto 20px;
+    }
+
+    .bio-text {
+        margin-bottom: 30px;
+    }
+
+    .bio-text p {
+        margin-bottom: 15px;
+        line-height: 1.6;
+    }
+
+    .publications-list {
+        margin-top: 30px;
+    }
+
+    .publications-list h3 {
+        margin-bottom: 15px;
+    }
+
+    .publications-list ul {
+        margin-bottom: 20px;
+    }
+
+    .publications-list li {
+        margin-bottom: 10px;
+        line-height: 1.5;
+    }
+
+    /* Services adjustments */
+    .services-container {
+        padding: 20px;
+        padding-top: 100px;
+    }
+
+    .service-item {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    /* Bookshelf adjustments */
+    .books-container {
+        padding-top: 100px;
+    }
+
+    .book-item {
+        padding: 20px;
+        padding-top: 100px;
+    }
+
+    .book-title {
+        font-size: 60px;
+    }
+
+    .page-titles {
+        top: 100px;
+        left: 20px;
+        right: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .mobile-nav {
+        padding: 0 15px;
+    }
+
+    .mobile-nav-brand h1 {
+        font-size: 12px;
+    }
+
+    .mobile-nav-brand h2 {
+        font-size: 10px;
+    }
+
+    .project-item {
+        padding: 15px;
+        padding-top: 60px;
+    }
+
+    .book-item {
+        padding: 15px;
+        padding-top: 100px;
+    }
+
+    .project-title {
+        font-size: 80px;
+        line-height: 1;
+        margin-bottom: 15px;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+    }
+
+    .project-description {
+        font-size: 11px;
+    }
+
+    .full-name {
+        font-size: 40px;
+    }
+
+    .book-title {
+        font-size: 40px;
+    }
+
+    .cv-content,
+    .services-content,
+    .repositories-content,
+    .bookshelf-content {
+        padding: 15px;
+        padding-top: 100px;
+        overflow-y: auto;
+    }
+
+    .bio-content {
+        padding: 0;
+        padding-top: 60px;
+        min-height: calc(100vh - 60px);
+        overflow-y: auto;
+    }
+
+    .project-image {
+        max-height: 50vh;
+    }
+
+    .book-preview {
+        display: none;
+    }
+}
+
+/* Cross-browser compatibility */
+@supports not (backdrop-filter: blur(10px)) {
+    .main-menu,
+    .mobile-nav {
+        background: rgba(231, 231, 231, 0.95);
+    }
+}
+
+/* Safari specific fixes */
+@supports (-webkit-backdrop-filter: blur(10px)) {
+    .main-menu,
+    .mobile-nav {
+        -webkit-backdrop-filter: blur(10px);
+    }
+}

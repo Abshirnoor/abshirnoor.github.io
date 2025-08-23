@@ -1,0 +1,197 @@
+/* CV Page Styles - Matching Attached Image Layout */
+.cv-content {
+    margin-left: var(--menu-width);
+    padding: 0;
+    min-height: 100vh;
+    overflow-y: auto;
+    background: var(--project-bg);
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    color: var(--text-color);
+    padding-top: 60px;
+}
+
+.cv-container {
+    max-width: 100%;
+    margin: 0;
+    padding: 40px 60px;
+    font-family: 'Helvetica', 'Arial', sans-serif;
+}
+
+
+
+/* Profile Summary Section */
+.profile-summary {
+    margin-bottom: 80px;
+}
+
+.profile-label {
+    font-size: 14px;
+    color: var(--text-color);
+    opacity: 0.6;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.profile-text {
+    font-size: 16px;
+    line-height: 1.8;
+    color: var(--text-color);
+    max-width: 800px;
+    text-align: left;
+}
+
+/* CV Details Section */
+.cv-details {
+    margin-bottom: 80px;
+}
+
+.cv-main-title {
+    font-size: 120px;
+    font-weight: 300;
+    line-height: 1;
+    margin-bottom: 60px;
+    color: var(--text-color);
+    letter-spacing: -3px;
+}
+
+.cv-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: start;
+}
+
+.column-title {
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 30px;
+    color: var(--text-color);
+    letter-spacing: -1px;
+}
+
+.skills-list,
+.interest-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.skills-list li,
+.interest-list li {
+    font-size: 16px;
+    color: var(--text-color);
+    margin-bottom: 15px;
+    padding: 0;
+    line-height: 1.4;
+}
+
+.skills-list li:last-child,
+.interest-list li:last-child {
+    margin-bottom: 0;
+}
+
+/* Footer Contact Information */
+.cv-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    margin-top: 60px;
+    font-size: 14px;
+    color: var(--text-color);
+    opacity: 0.7;
+}
+
+.footer-left,
+.footer-center,
+.footer-right {
+    flex: 1;
+}
+
+.footer-left {
+    text-align: left;
+}
+
+.footer-center {
+    text-align: center;
+}
+
+.footer-right {
+    text-align: right;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .cv-main-title {
+        font-size: 90px;
+    }
+    
+    .cv-columns {
+        gap: 60px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .cv-content {
+        margin-left: 0;
+    }
+    
+    .cv-container {
+        padding: 30px 40px;
+    }
+    
+    .cv-main-title {
+        font-size: 80px;
+    }
+    
+    .cv-columns {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .cv-container {
+        padding: 20px 30px;
+    }
+    
+    .cv-main-title {
+        font-size: 60px;
+    }
+    
+    .column-title {
+        font-size: 20px;
+    }
+    
+    .cv-footer {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+    
+    .footer-left,
+    .footer-center,
+    .footer-right {
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .cv-container {
+        padding: 15px 20px;
+    }
+    
+    .cv-main-title {
+        font-size: 48px;
+    }
+    
+    .cv-columns {
+        gap: 30px;
+    }
+    
+    .profile-text {
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,256 @@
+.services-content {
+    margin-left: var(--menu-width);
+    padding: 60px 40px 40px 40px;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    min-height: 100vh;
+    overflow-y: auto;
+}
+
+.services-container {
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+    align-items: flex-start;
+}
+
+/* Left Column - Services */
+.services-column {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+/* Right Column - Contact Section */
+.contact-column {
+    flex: 1;
+    position: sticky;
+    top: 100px;
+}
+
+.service-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+    padding: 25px 0;
+    width: 100%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.service-info {
+    flex: 1;
+    max-width: 500px;
+}
+
+.service-title {
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 12px;
+    line-height: 1.4;
+}
+
+.service-description {
+    font-size: 16px;
+    font-weight: 400;
+    color: #666;
+    line-height: 1.6;
+}
+
+.service-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 20px;
+    background-color: #f8f9fa;
+    border: 1px solid #e9ecef;
+    border-radius: 6px;
+    color: #333;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+    flex-shrink: 0;
+    outline: none;
+}
+
+.service-link:hover {
+    background-color: #e9ecef;
+    border-color: #dee2e6;
+    transform: translateY(-1px);
+}
+
+.service-link:focus {
+    outline: none;
+}
+
+.service-link i {
+    font-size: 12px;
+    color: #666;
+}
+
+.contact-section {
+    text-align: left;
+    padding: 40px 30px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    background-color: #fafafa;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.contact-section h3 {
+    font-size: 22px;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 16px;
+}
+
+.contact-section p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 30px;
+    line-height: 1.6;
+    max-width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.consultation-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 14px 24px;
+    background-color: #f8f9fa;
+    border: 1px solid #e9ecef;
+    color: #333;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 500;
+    margin-right: 16px;
+    transition: all 0.3s ease;
+    outline: none;
+}
+
+.consultation-link:hover {
+    background-color: #e9ecef;
+    border-color: #dee2e6;
+    transform: translateY(-1px);
+}
+
+.consultation-link:focus {
+    outline: none;
+}
+
+.contact-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 14px 24px;
+    background-color: #f8f9fa;
+    border: 1px solid #e9ecef;
+    color: #333;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    outline: none;
+}
+
+.contact-link:hover {
+    background-color: #e9ecef;
+    border-color: #dee2e6;
+    transform: translateY(-1px);
+}
+
+.contact-link:focus {
+    outline: none;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .services-container {
+        flex-direction: column;
+        gap: 60px;
+    }
+    
+    .contact-column {
+        position: static;
+        order: -1;
+    }
+    
+    .contact-section {
+        text-align: center;
+    }
+    
+    .contact-section p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .services-content {
+        padding: 60px 20px 40px 20px;
+        margin-left: 0;
+    }
+
+    .services-container {
+        gap: 40px;
+    }
+
+    .service-item {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px 0;
+        text-align: center;
+    }
+
+    .service-info {
+        max-width: 100%;
+    }
+
+    .service-title {
+        font-size: 16px;
+    }
+
+    .service-description {
+        font-size: 14px;
+    }
+
+    .service-link {
+        align-self: center;
+    }
+
+    .consultation-link,
+    .contact-link {
+        display: block;
+        margin: 8px auto;
+        text-align: center;
+        max-width: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    .services-content {
+        padding: 50px 15px 30px 15px;
+    }
+
+    .services-container {
+        gap: 30px;
+    }
+
+    .service-item {
+        padding: 15px 0;
+    }
+}

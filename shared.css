@@ -1,0 +1,69 @@
+/* Shared styles for all content pages */
+.content-container {
+    margin-left: var(--menu-width);
+    padding: 40px;
+    max-width: 1200px;
+    font-family: 'Helvetica', 'Arial', sans-serif;
+}
+
+.page-title {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+/* Grid layouts */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+/* Card styles */
+.card {
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #666;
+}
+
+/* Links */
+.link {
+    color: #0066cc;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .content-container {
+        padding: 20px;
+    }
+    
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .content-container {
+        margin-left: 0;
+    }
+}

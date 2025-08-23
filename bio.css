@@ -1,0 +1,119 @@
+/* Bio Page Styles */
+html, body {
+    overflow: auto;
+    height: auto;
+}
+
+.bio-content {
+    margin-left: var(--menu-width);
+    padding: 60px 40px 40px 40px;
+    max-width: 1200px;
+    color: #333;
+    min-height: 100vh;
+    overflow-y: auto;
+    font-family: 'Helvetica', 'Arial', sans-serif;
+}
+
+.bio-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.bio-title {
+    font-size: 14px;
+    font-weight: 400;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.bio-section {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    gap: 30px;
+    align-items: start;
+}
+
+.bio-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.bio-text {
+    font-size: 14px;
+    line-height: 1.6;
+    max-width: 100%;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.bio-text p {
+    margin-bottom: 20px;
+    text-align: justify;
+    hyphens: auto;
+}
+
+.bio-text h2 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #000;
+    margin: 30px 0 15px 0;
+    padding-bottom: 8px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.bio-text h2:first-child {
+    margin-top: 0;
+}
+
+.publications-list {
+    list-style: none;
+    margin: 20px 0;
+}
+
+.publications-list li {
+    margin-bottom: 8px;
+    font-style: italic;
+}
+
+.highlight-link {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+.highlight-link:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .bio-section {
+        grid-template-columns: 1fr;
+    }
+
+    .bio-image {
+        max-width: 300px;
+        margin: 0 auto 20px;
+    }
+    
+    .bio-text h2 {
+        font-size: 16px;
+        margin: 25px 0 12px 0;
+    }
+    
+    .bio-text p {
+        font-size: 13px;
+        line-height: 1.5;
+    }
+}
+
+@media (max-width: 480px) {
+    .bio-content {
+        margin-left: 0;
+        padding: 20px;
+    }
+
+    .bio-title {
+        margin-bottom: 30px;
+    }
+}
